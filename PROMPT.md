@@ -1,10 +1,10 @@
-# minions-hiring — Hiring Pipeline Implementation Prompt
+**MINIONS HIRING — HIRING PIPELINE**
 
 You are tasked with building **minions-hiring**, a structured recruiting and hiring pipeline system built on the Minions SDK. This is a structured approach to candidate tracking, interview management, and offer workflow designed for both recruiting teams and AI agents.
 
 ---
 
-## Project Overview
+**PROJECT OVERVIEW**
 
 **minions-hiring** provides structured candidate tracking, scorecard-based interviews, bias detection, and offer comparison. Unlike traditional ATS (Applicant Tracking Systems), every component of the hiring process (candidates, interviews, scorecards, offers) is a structured minion that can be queried, related, versioned, and manipulated by agents.
 
@@ -103,7 +103,7 @@ from minions import (
 
 ---
 
-## Core Primitives
+**CORE PRIMITIVES**
 
 The system is built from these minion types:
 
@@ -253,7 +253,7 @@ A role the organization is hiring for.
 
 ---
 
-## Beyond the Standard Pattern
+**BEYOND THE STANDARD PATTERN**
 
 ### 1. Scorecard Templates & Question Banks
 
@@ -374,7 +374,7 @@ Link interviews to question sets from `minions-skills` for consistency and reusa
 
 ---
 
-## Dual SDK Support (TypeScript + Python)
+**DUAL SDK SUPPORT (TYPESCRIPT + PYTHON)**
 
 Both SDKs provide identical functionality:
 
@@ -408,7 +408,7 @@ score = analyzer.calculate_composite_score(scorecard, template)
 
 ---
 
-## CLI Commands
+**CLI COMMANDS**
 
 The `hiring` CLI extends the base `minions` CLI with recruiting-specific commands.
 
@@ -460,7 +460,7 @@ hiring candidate-summary <candidate-id>
 
 ---
 
-## Documentation Site
+**DOCUMENTATION SITE**
 
 Built with **Astro Starlight** with dual-language SDK examples.
 
@@ -496,7 +496,7 @@ Every code example includes both TypeScript and Python tabs.
 
 ---
 
-## Agent Use Cases
+**AGENT USE CASES**
 
 **Autonomous Pipeline Management:**
 An agent monitors the hiring pipeline, detects stalled candidates, and sends reminders to interviewers.
@@ -515,7 +515,7 @@ An agent generates weekly hiring metrics reports with velocity trends and bottle
 
 ---
 
-## Project Structure
+**PROJECT STRUCTURE**
 
 ```
 minions-hiring/
@@ -568,7 +568,7 @@ minions-hiring/
 
 ---
 
-## Tone and Positioning
+**TONE & POSITIONING**
 
 **minions-hiring** is a structured recruiting system designed for data-driven hiring decisions and agent-assisted workflows. The messaging should emphasize:
 
@@ -582,7 +582,7 @@ The docs should speak to hiring managers, recruiters, and HR teams building data
 
 ---
 
-## Success Criteria
+**SUCCESS CRITERIA**
 
 You will know this implementation is successful when:
 
