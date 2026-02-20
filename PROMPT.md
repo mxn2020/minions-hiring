@@ -196,7 +196,7 @@ Reusable evaluation framework for a specific role or interview type.
 - `title` (string, required) — template name (e.g., "Senior Engineer Technical Interview")
 - `description` (textarea) — what this template evaluates
 - `dimensions` (json, required) — evaluation dimensions with weights (e.g., `{ "technical": 40, "problem-solving": 30, "communication": 30 }`)
-- `questionBankIds` (array) — references to question minions from `minions-skills`
+- `questionBankIds` (array) — references to question minions from `@minions-skills/sdk`
 - `passingScore` (number) — minimum score to pass (0-100)
 
 **Relations:**
@@ -261,7 +261,7 @@ Unlike traditional ATS, interview evaluations are structured and reusable.
 
 **Features:**
 - Define scoring dimensions with weights (e.g., technical 40%, communication 30%)
-- Link to question banks from `minions-skills` for consistency
+- Link to question banks from `@minions-skills/sdk` for consistency
 - Calculate composite scores automatically
 - Compare candidate scores across the same template
 - Track which interviewers are consistently harsh or lenient
@@ -364,7 +364,7 @@ hiring funnel --role <job-id>
 
 ### 5. Interview Question Bank Integration
 
-Link interviews to question sets from `minions-skills` for consistency and reusability.
+Link interviews to question sets from `@minions-skills/sdk` for consistency and reusability.
 
 **Features:**
 - Reusable question libraries tagged by skill
@@ -380,7 +380,7 @@ Both SDKs provide identical functionality:
 
 **TypeScript:**
 ```typescript
-import { CandidateBuilder, ScorecardAnalyzer, OfferComparator } from 'minions-hiring';
+import { CandidateBuilder, ScorecardAnalyzer, OfferComparator } from '@minions-hiring/sdk';
 
 const candidate = new CandidateBuilder()
   .withName('Alice Johnson')
